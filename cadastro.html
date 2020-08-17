@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="https://image.flaticon.com/icons/svg/3028/3028626.svg" alt="varejo">
+            <ul>
+                <a href="produtos.html">Consulta</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>NOVO PRODUTO</h1>
+        <form>
+            <label for="prod">NOME DO PRODUTO:</label>
+            <br>
+            <input id="prod" type="text" name="prod">
+            <br>
+            <br>
+            <label for="tipo">TIPO:
+                <br>
+                <select name="tipo" id="tipo">
+                    <optgroup label="tipo" id="tipo">
+                        <option value="limpeza">Limpeza</option>
+                        <option value="escolar">Material Escolar</option>
+                        <option value="informatica">Informática</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label for="un">UNIDADE:
+                <br>
+                <select name="un" id="un">
+                    <optgroup label="un" id="un">
+                        <option value="ml">ML</option>
+                        <option value="unidade">UNIDADE</option>
+                        <option value="peca">PEÇA</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label for="qtdade">QUANTIDADE INICIAL:</label>
+            <br>
+            <input id="qtdade" type="number" name="qtdade">
+            <label>
+                <br>
+                <br>
+                <label id="nserie" for="serie">Nº DE SERIE:</label>
+                <br>
+                <input id="serie" type="text" oninput="ponto(this)">
+                <br>
+                <br>
+                CARACTERÍSTICAS:
+                <br>
+                <br>
+                <textarea id="carac" name="sobre" rows="5" cols="55"></textarea>
+            </label>
+            <br>
+            <br>
+            <input id="salvar" type="button" onclick=evento() value="Salvar">
+        </form>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

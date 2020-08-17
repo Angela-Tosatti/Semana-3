@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Produtos</title>
+
+</head>
+
+<style>
+    body {
+        font-family: Verdana;
+        background-color: rgb(219, 56, 56);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #tabela {
+        width: 100%;
+        border: solid 1px;
+        text-align: center;
+        border-collapse: collapse;
+        background-color: rgb(236, 167, 97);
+    }
+
+    #Conteudo {
+        background-color: rgb(236, 167, 97);
+        margin: 15px;
+        border: solid 3px black;
+        padding: 0px 0px;
+    }
+
+    tbody tr {
+        border: solid 1px;
+        height: 30px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    thead th {
+        border: solid 1px;
+        height: 30px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    thead tr {
+        border: solid 1px;
+        height: 30px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    thead td {
+        border: solid 1px;
+        height: 30px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    tr:hover {
+        background-color: rgb(141, 111, 80);
+    }
+
+    header {
+        background-color: rgb(236, 167, 97);
+        margin: 15px;
+        border: solid 3px black;
+        padding: 0px 0px;
+    }
+
+    header img {
+        height: 10vh;
+        width: 8vw;
+    }
+
+    header ul {
+        position: relative;
+        float: right;
+    }
+
+    header ul a {
+        text-decoration: none;
+        font: normal 15pt arial;
+        margin: 10px 10px;
+        color: black;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <img src="https://image.flaticon.com/icons/svg/3028/3028626.svg" alt="varejo">
+            <ul>
+                <a href="cadastro.html">Cadastro</a>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <label for="filtro">Filtrar:</label>
+        <input id="filtro" type="text" name="filtro">
+    </form>
+
+    <p>PRODUTOS CADASTRADOS</p>
+    <div id="Conteudo">
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>NOME DO PRODUTO</th>
+                    <th>TIPO</th>
+                    <th>UNIDADE</th>
+                    <th>QUANTIDADE INICIAL</th>
+                    <th>Nº DE SERIE:</th>
+                    <th>CARACTERÍSTICAS</th>
+                </tr>
+            </thead>
+            
+        </table>
+       
+        <script src="main2.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+
+    <style>
+
+        input {
+            outline: none;
+        }
+
+        input:invalid {
+            border: 1px solid red;
+        }
+
+        input:valid {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <input type="email" required placeholder="email@email.com">
+    <input id="input" type="text" placeholder="texto">
+
+    <script>
+
+        document.getElementById("input").addEventListener('input', minhaFunc)
+
+        function minhaFunc(e) {
+            if (e.data == "@") {
+                alert("Caractere inválido");
+                e.preventDefault();
+                this.value = this.value.slice(0, -1)
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
